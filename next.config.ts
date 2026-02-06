@@ -1,8 +1,12 @@
 import type {NextConfig} from 'next';
 
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+
 const nextConfig: NextConfig = {
   /* config options here */
-  output: 'standalone',
+  output: isGitHubPages ? 'export' : 'standalone',
+  basePath: isGitHubPages ? '/defit-app' : '',
+  assetPrefix: isGitHubPages ? '/defit-app/' : '',
   typescript: {
     ignoreBuildErrors: true,
   },
