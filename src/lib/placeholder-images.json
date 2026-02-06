@@ -1,0 +1,94 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Soldiers working out with kettlebells outdoors.",
+      "imageUrl": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaWxpdGFyeSUyMGZpdG5lc3N8ZW58MHx8fHwxNzY0NzkzNTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "military fitness"
+    },
+    {
+      "id": "logo1",
+      "description": "DEFIT Challenge Logo",
+      "imageUrl": "/fonts/Images/defit logo 1.png",
+      "imageHint": "fitness logo"
+    },
+    {
+      "id": "logo2",
+      "description": "DEFIT Challenge Compact Logo",
+      "imageUrl": "/fonts/Images/defit logo 2.jpg",
+      "imageHint": "fitness logo"
+    },
+    {
+      "id": "leaderboard",
+      "description": "A military award ceremony.",
+      "imageUrl": "https://images.unsplash.com/photo-1613826488249-b67eba609bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtaWxpdGFyeSUyMGF3YXJkfGVufDB8fHx8MTc2NDc5MzUyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "military award"
+    },
+    {
+      "id": "resources",
+      "description": "A collection of books and documents on a shelf.",
+      "imageUrl": "https://images.unsplash.com/photo-1696952384865-82dba88ac831?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkb2N1bWVudCUyMGJvb2t8ZW58MHx8fHwxNzY0NzkzNTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "document book"
+    },
+    {
+      "id": "rules",
+      "description": "A person reading a rule book.",
+      "imageUrl": "https://images.unsplash.com/photo-1680587513906-d04091ab3c52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cmVhZGluZyUyMGJvb2t8ZW58MHx8fHwxNzY0Njc0MzM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "reading book"
+    },
+    {
+      "id": "learn-more",
+      "description": "A person looking at an informational display.",
+      "imageUrl": "https://images.unsplash.com/photo-1604909625077-3c746bc1319c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbmZvcm1hdGlvbiUyMGRpc3BsYXl8ZW58MHx8fHwxNzY0NzkzNTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "information display"
+    },
+    {
+      "id": "avatar-soldier",
+      "description": "A silhouette of a soldier.",
+      "imageUrl": "https://images.unsplash.com/photo-1676490601773-52ce9a77d6a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb2xkaWVyJTIwc2lsaG91ZXR0ZXxlbnwwfHx8fDE3NjUxMjg3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "soldier silhouette"
+    },
+    {
+      "id": "avatar-kettlebell",
+      "description": "A kettlebell icon.",
+      "imageUrl": "https://images.unsplash.com/photo-1567175693298-ab0c4166ad6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxrZXR0bGViZWxsJTIwaWNvbnxlbnwwfHx8fDE3NjUxMjg0Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kettlebell icon"
+    },
+    {
+      "id": "avatar-barbell",
+      "description": "A barbell.",
+      "imageUrl": "https://images.unsplash.com/photo-1689514226730-c0fbca1345c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYXJiZWxsJTIwd2VpZ2h0c3xlbnwwfHx8fDE3NjUwMzc1NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "barbell weights"
+    },
+    {
+      "id": "avatar-shoe",
+      "description": "A running shoe.",
+      "imageUrl": "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cnVubmluZyUyMHNob2V8ZW58MHx8fHwxNzY1MDg4MDI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "running shoe"
+    },
+    {
+      "id": "avatar-tank",
+      "description": "An army tank.",
+      "imageUrl": "https://images.unsplash.com/photo-1631570323109-745d1f7d2b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcm15JTIwdGFua3xlbnwwfHx8fDE3NjUxMjg3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "army tank"
+    },
+    {
+      "id": "avatar-bullet",
+      "description": "A rifle bullet.",
+      "imageUrl": "https://images.unsplash.com/photo-1742349533642-f154b28134ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxidWxsZXQlMjBjYXNpbmd8ZW58MHx8fHwxNzY1MTI4NzIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bullet casing"
+    },
+    {
+      "id": "avatar-weights",
+      "description": "A stack of weight plates.",
+      "imageUrl": "https://images.unsplash.com/photo-1711234247732-d9b008a3b072?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWlnaHQlMjBwbGF0ZXN8ZW58MHx8fHwxNzY1MTI4NzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "weight plates"
+    },
+    {
+      "id": "avatar-eagle",
+      "description": "An eagle emblem.",
+      "imageUrl": "https://images.unsplash.com/photo-1689978858829-dba0699e95f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlYWdsZSUyMGVtYmxlbXxlbnwwfHx8fDE3NjUxMjg3MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "eagle emblem"
+    }
+  ]
+}

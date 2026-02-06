@@ -1,0 +1,187 @@
+
+{
+  "entities": {
+    "UserProfile": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "UserProfile",
+      "type": "object",
+      "description": "Represents a user profile within the DEFIT 2026 application.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the UserProfile entity, matching the Firebase Auth UID."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "The user's display name."
+        },
+        "email": {
+          "type": "string",
+          "description": "The user's email address.",
+          "format": "email"
+        },
+        "registrationDate": {
+          "type": "string",
+          "description": "The date and time the user registered.",
+          "format": "date-time"
+        },
+        "isSoldier": {
+          "type": "boolean",
+          "description": "Indicates if the user is a U.S. Army Reserve Soldier."
+        },
+        "rank": {
+          "type": "string",
+          "description": "The rank of the Soldier (if applicable)."
+        },
+        "unit": {
+          "type": "string",
+          "description": "The unit of the Soldier (if applicable)."
+        },
+        "teamName": {
+          "type": "string",
+          "description": "The user's team name for team-based competitions."
+        },
+        "phoneNumber": {
+          "type": "string",
+          "description": "The user's phone number."
+        },
+        "availableCardio": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "A list of cardio equipment the user has access to."
+        },
+        "avatarUrl": {
+          "type": "string",
+          "description": "The URL of the user's profile picture, stored as a data URI."
+        },
+        "selectedMission": {
+          "type": "string",
+          "description": "The user's selected mission plan."
+        }
+      },
+      "required": [
+        "id",
+        "displayName",
+        "email",
+        "registrationDate"
+      ]
+    },
+    "WorkoutLog": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "WorkoutLog",
+      "type": "object",
+      "description": "Represents a single workout log entry for a user.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the WorkoutLog entity."
+        },
+        "userProfileId": {
+          "type": "string",
+          "description": "Reference to UserProfile. (Relationship: UserProfile 1:N WorkoutLog)"
+        },
+        "week": {
+          "type": "number",
+          "description": "The challenge week number for this log."
+        },
+        "workoutDate": {
+          "type": "string",
+          "description": "The date of the workout.",
+          "format": "date-time"
+        },
+        "tmarMMinutes": {
+          "type": "number",
+          "description": "Minutes spent on TMAR-M workout."
+        },
+        "resistanceLbs": {
+          "type": "number",
+          "description": "Pounds lifted during Strength and Resistance workout."
+        },
+        "cardioMilesRunning": {
+          "type": "number",
+          "description": "Miles ran during cardio workout."
+        },
+        "cardioMilesRucking": {
+          "type": "number",
+          "description": "Miles rucking during cardio workout."
+        },
+        "cardioMilesWalking": {
+          "type": "number",
+          "description": "Miles walking during cardio workout."
+        },
+        "cardioMilesElliptical": {
+          "type": "number",
+          "description": "Miles on elliptical during cardio workout."
+        },
+        "cardioMilesRowing": {
+          "type": "number",
+          "description": "Miles on rowing machine during cardio workout."
+        },
+        "cardioMetersSwimming": {
+          "type": "number",
+          "description": "Meters swimming during cardio workout."
+        },
+        "cardioMilesCycling": {
+          "type": "number",
+          "description": "Miles cycling during cardio workout."
+        },
+        "hiitMinutes": {
+          "type": "number",
+          "description": "Minutes spent on HIIT workout."
+        }
+      },
+      "required": [
+        "id",
+        "userProfileId",
+        "week",
+        "workoutDate"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/users/{userProfileId}",
+        "definition": {
+          "entityName": "UserProfile",
+          "schema": {
+            "$ref": "#/backend/entities/UserProfile"
+          },
+          "description": "Stores user profile information. The path is based on the user's Firebase UID, ensuring straightforward ownership-based security rules.",
+          "params": [
+            {
+              "name": "userProfileId",
+              "description": "The Firebase UID of the user. It represents the unique identifier for each user profile."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/workoutLogs/{workoutLogId}",
+        "definition": {
+          "entityName": "WorkoutLog",
+          "schema": {
+            "$ref": "#/backend/entities/WorkoutLog"
+          },
+          "description": "Stores all workout log entries for all users. This allows for global queries for leaderboards.",
+          "params": [
+            {
+              "name": "workoutLogId",
+              "description": "The unique ID of the workout log entry."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+    
